@@ -12,5 +12,5 @@ jobs: # basic units of work in a run
       - run: sudo apt install --fix-missing postgresql-client
       - run: whoami
       - run:
-        command: |
-          psql -d $TEST_DATABASE_URL -c "CREATE TABLE test (name char(25));"
+        name: Create Table
+        command: psql -d $TEST_DATABASE_URL -c "CREATE TABLE test (name char(25));"
