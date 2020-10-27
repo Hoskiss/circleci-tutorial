@@ -13,4 +13,4 @@ jobs: # basic units of work in a run
       - run: whoami
       - run:
         name: Create Table
-        command: psql -d $TEST_DATABASE_URL -c "CREATE TABLE test (name char(25));"
+        command: psql -d $TEST_DATABASE_URL
