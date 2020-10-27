@@ -20,7 +20,7 @@ jobs: # basic units of work in a run
           command: |
             psql \
             -d $TEST_DATABASE_URL \
-            -c "SELECT * from test limit 10"
+            -c "SELECT * from test limit 5"
 orbs:
   jira: circleci/jira@1.2.2
 workflows:
